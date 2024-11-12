@@ -12,7 +12,7 @@ var _a;
 function getWeatherData(zipCode) {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("Zip code: ", zipCode);
-        const apiKey = '65e6e3efc0eaa6f97c23cde643c6b19a';
+        const apiKey = 'YOUR_API_KEY';
         const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${apiKey}&units=metric`;
         try {
             const response = yield axios.get(url);
